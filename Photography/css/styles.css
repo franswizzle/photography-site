@@ -1,0 +1,752 @@
+/* Gobal Styles */
+/* color: rgb(111,43,43); */
+/* #672b2b; */
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+   
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* fonts */
+@font-face {
+    font-family: "Galada";
+    src: url("../fonts/Galada-Regular.ttf")
+}
+
+/* Navigation Section */
+
+nav div {
+    display: inline-block;
+    
+}
+.nav {
+    height: 100px;
+    width: 100%;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    position: fixed;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 3;
+    background-color: transparent !important;
+    transition: background-color 100ms linear;
+}
+
+.nav-scrolled {
+    height: 100px;
+    width: 100%;
+    padding-top: .25em;
+    padding-bottom: .25em;
+    position: fixed;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 3;
+    background-color: #000 !important;
+    transition: background-color 100ms ;
+
+}
+
+
+
+.left-nav {
+    vertical-align: top;
+    font-family: 'Galada', cursive;
+    font-size: 25px;
+    color: #000000;
+    width: 40%;
+    display: inline-block;
+    margin-left: 80px;
+
+}
+
+.left-nav-scrolled {
+
+        font-family: 'Galada', cursive;
+        font-size: 25px;
+        color: white;
+        width: 40%;
+        display: inline-block;
+        margin-left: 80px;
+    
+    }
+
+
+.center-nav img {
+    max-width: 100px;
+    vertical-align: center;
+    align-content: center;
+    padding-top: 10px;
+}
+
+.nav-center {
+    place-content: center;
+    width: 30%;
+   
+}
+.nav-center h2 {
+    font-size: 26px;
+    display: inline-block;
+}
+
+.nav-btn a {
+    font-size: 16px;
+    border-radius: 5px;
+    color: #000000;
+    padding: 0px 10px 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn a:before {
+    font-size: 18px;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: rgb(111,43,43);
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    transform: scale(1.1)
+  }
+
+  .nav-btn a:hover {
+    transition: 0.3s; 
+    font-size: 18px;
+  }
+  
+
+.nav-btn a:hover:before {
+    font-size: 18px;
+    right: 0;
+
+}
+
+
+.nav-btn-scroll a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s; 
+}
+
+.nav-btn-scroll a:hover{
+   
+    color: #ffffff;
+    font-size: 18px;
+
+}
+
+
+nav ul {
+    float: right;
+    width: 30%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 3.7em;
+    margin-right: 20px;  
+}
+
+.nav-right {
+   display: inline;
+}
+
+li {
+    display: inline;
+}
+
+/* Introduction */
+
+ .intro {
+    display:  inline-block;
+    width: 90%; 
+    height: 500px;
+    position: relative;
+    left: 5%;
+    background: url("../images/ivan-cabanas--E2nk5pNJ1g-unsplash.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.intro-container {
+    height: 100%;
+    position: relative;
+    top: 40%;
+    left: 60%;
+    width: 40%;
+    display: inline-block;
+    color: #ffffff;
+    
+}
+
+.intro div {
+    padding-bottom: 20px;
+}
+
+.intro h1 {
+    font-family: 'Galada', cursive;
+    display: inline-block;
+    color: #ffffff;
+    text-align: right;
+}
+
+.intro .contact-btn {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border: #ffffff 5px solid;
+    padding: 10px 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.contact-btn-span a:hover {
+    background-color: #ffffff;
+    color: rgb(111,43,43);
+    font-size: 18px;
+}
+/* Animation */
+#arrows {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.arrow a {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+.arrow span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid #672b2b;
+    border-right: 5px solid #672b2b;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* Photo Gallery Section */
+
+.photos {
+    
+    width: 90%; 
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+picture {
+    height: 35vh;
+    flex-grow: 1;
+}
+
+.photos img {
+    height: 35vh;
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    opacity: 1;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+  picture:hover img {
+    opacity: 0.3;
+  }
+  
+  picture:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay-text {
+    position: relative;
+    color:#672b2b;
+    font-size: 16px;
+  }
+
+  .overlay-text a {
+    color:#672b2b;
+    text-decoration: none;
+    padding: 50px;
+  }
+
+
+/* Prices */
+
+
+.pricing { 
+
+    width: 90%;
+    position: relative;
+    left: 5%;   
+    margin-bottom: 20px;
+    height: 500px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.price-photo img {
+    width: 550px;
+    margin-right: 0;
+    z-index: -3;
+    clip-path: ellipse(150px 150px at 250px 150px);
+    position: relative;
+   
+
+   
+}
+
+
+.price-photo {
+
+   
+    width: 40%;
+    vertical-align: top;
+    margin:0;
+    float: left;
+
+   
+}
+.prices {
+  
+    max-width: 600px;
+    width: 100%;
+    float: left;
+
+}
+.prices h1 {
+    font-size: 36px;
+    font-family: 'Galada', cursive;
+    text-align: center;
+    color: #672b2b;
+}
+
+table {
+    float: left;
+    font-size: 22px;
+    max-width: 600px;
+    width: 100%;
+    z-index: 3;
+   
+}
+
+td {
+    padding: 20px;
+    color: #333333;
+}
+
+/* Footer */
+
+footer {
+    padding: 50px 20px 50px 20px;
+    overflow: auto;
+    color: #ffffff;
+    background-color: #000000;
+   
+   
+}
+.social {
+    padding-top: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+.social img{
+    max-width: 50px;
+    transition: .3s;
+}
+.social img:hover {
+    max-width: 60px;
+}
+
+footer img {
+    display: inline;
+    padding: 20px;
+    align-content: center;
+}
+.footer div {
+    display: block;
+    width: 100%;
+}
+
+
+.copyright {
+    padding: 30px 30px;
+    text-align: center;
+   
+}
+
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.75)
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    display: block;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+    max-width: 800x;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlide1 {
+    display: none;
+  }
+
+  .mySlide2 {
+    display: none;
+  }
+
+  .mySlide3 {
+    display: none;
+  }
+
+  .mySlide4 {
+    display: none;
+  }
+
+  .mySlide5 {
+    display: none;
+  }
+
+  .mySlide6 {
+    display: none;
+  }
+
+  .mySlide7 {
+    display: none;
+  }
+
+  .mySlide8 {
+    display: none;
+  }
+
+  .mySlide9 {
+    display: none;
+  }
+
+  .mySlide10 {
+    display: none;
+  }
+
+  .mySlide11 {
+    display: none;
+  }
+
+  .mySlide12 {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* Media Queries */
+
+@media screen and (max-width: 1100px) {
+
+    .photos :last-child {
+        width: 100%;
+}
+    .left-nav {
+        align-content: left;
+        vertical-align: top;
+        font-family: 'Galada', cursive;
+        font-size: 14px;
+        color: #000000;
+        width: 50%;
+        display: inline-block;
+
+}
+    .left-nav-scrolled {
+        align-content: left;
+        font-family: 'Galada', cursive;
+        font-size: 14px;
+        color: white;
+        width: 50%;
+        display: inline-block;
+       
+
+}
+    nav ul {
+        align-content: center;
+        width: 100%;
+        list-style-type: none;
+        padding-bottom: 1em;
+        margin: 0;
+        margin-top: 0;
+        margin-right: 0;  
+    }
+
+    .nav-right {
+        align-content: center;
+        text-align: center;
+    }
+
+    .nav-scrolled {
+        height: 100px;
+        width: 100%;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        position: fixed;
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 3;
+        background-color: #000 !important;
+        transition: background-color 100ms ;
+    
+    }
+
+    .center-nav img {
+        max-width: 50px;
+        vertical-align: right;
+        align-content: right;
+        padding-top: 10px;
+    }
+    
+    .nav-center {
+        place-content: right;
+        width: 50%;
+       
+    }
+
+    /* Animation */
+
+.arrow, .arrow span, #arrows {
+    display: none;
+}
+
+.intro-container {
+    height: 100%;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    width: 80%;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.intro .contact-btn {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    border: #ffffff 5px solid;
+    padding: 10px 100px;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.pricing { 
+    align-content: center;
+    text-decoration: center;
+    width: 90%;
+    position: relative;
+    left: 5%;   
+    margin-bottom: 20px;
+    height: 700px;
+    max-height: 1200px;
+    overflow: hidden;
+}
+
+.price-photo {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    vertical-align: top;
+    margin:0;
+ 
+
+   
+}
+.prices {
+    text-align: center;
+    align-content: center;
+    max-width: 600px;
+    width: 100%;
+ 
+
+}
+
+}
+
+  
+
+
+
+

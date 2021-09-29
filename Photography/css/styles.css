@@ -15,6 +15,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 /* fonts */
 @font-face {
@@ -37,7 +38,7 @@ nav div {
     top: 0;
     position: sticky;
     position: -webkit-sticky;
-    z-index: 3;
+    z-index: 20;
     background-color: transparent !important;
     transition: background-color 100ms linear;
 }
@@ -51,7 +52,7 @@ nav div {
     top: 0;
     position: sticky;
     position: -webkit-sticky;
-    z-index: 3;
+    z-index: 20;
     background-color: #000 !important;
     transition: background-color 100ms ;
 
@@ -319,7 +320,7 @@ picture {
 
 .overlay {
     transition: .5s ease;
-    opacity: 0;
+    opacity: 0%;
     position: relative;
     top: -50%;
     left: 50%;
@@ -329,6 +330,8 @@ picture {
 }
 
   picture:hover img {
+    position: relative;
+    z-index: 3;
     opacity: 0.3;
   }
   
@@ -472,24 +475,29 @@ footer img {
   
   /* Modal Content */
   .modal-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     display: block;
-    position: relative;
-    background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 80%;
-    max-width: 1200px;
-    max-width: 800x;
   }
+
+  .modal-content img {
+    align-self: center;
+    justify-self: center;
+  }
+
   
   /* The Close Button */
   .close {
     color: white;
     position: absolute;
-    top: 10px;
-    right: 25px;
+    top: 120px;
+    right: 50px;
     font-size: 35px;
     font-weight: bold;
+    z-index: 30;
   }
   
   .close:hover,

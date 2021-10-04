@@ -5,7 +5,7 @@ var $navtext = $(".left-nav");
 
 var $navbtn = $(".nav-btn");
 
-var $logo = $('.center-nav');
+var $logo = $('.logo-nav');
 
 const $modalContent = $(".modal-content");
 
@@ -131,7 +131,7 @@ $(function displayImage() {
         $("#myModal").css('display', 'none'); 
         $modalContent.empty();
         $('body,html').css('overflow','visible');
-        $nav.css('display', 'block')
+        $nav.css('display', 'flex')
         
         
         

@@ -26,10 +26,11 @@ body {
 /* Navigation Section */
 
 nav div {
-    display: inline-block;
+    display: flex;
     
 }
 .nav {
+    display: flex;
     height: 100px;
     width: 100%;
     padding-top: .25em;
@@ -41,6 +42,7 @@ nav div {
     z-index: 20;
     background-color: transparent !important;
     transition: background-color 100ms linear;
+    margin-bottom: 50px;
 }
 
 .nav-scrolled {
@@ -65,8 +67,8 @@ nav div {
     font-family: 'Galada', cursive;
     font-size: 25px;
     color: #000000;
-    width: 40%;
-    display: inline-block;
+    width: 70%;
+    display: flex;
     margin-left: 80px;
 
 }
@@ -75,24 +77,24 @@ nav div {
 
         font-family: 'Galada', cursive;
         font-size: 25px;
-        color: white;
-        width: 40%;
-        display: inline-block;
+        color: white;     
         margin-left: 80px;
     
     }
 
 
-.center-nav img {
-    max-width: 100px;
+.logo-nav img {
+    max-width: 50px;
     vertical-align: center;
-    align-content: center;
+    align-content: right;
+    padding-right: 30px;
     padding-top: 10px;
+    
 }
 
 .nav-center {
     place-content: center;
-    width: 30%;
+    width: 10%;
    
 }
 .nav-center h2 {
@@ -113,6 +115,8 @@ nav div {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
+    width: 100px;
+    text-align: center;
 }
 
 .nav-btn a:before {
@@ -163,21 +167,25 @@ nav div {
 
 
 nav ul {
-    float: right;
-    width: 30%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
     list-style-type: none;
     padding: 0;
     margin: 0;
     margin-top: 3.7em;
-    margin-right: 20px;  
+    margin-right: 80px;
+   
 }
 
 .nav-right {
-   display: inline;
+   display: flex;
+   width: 50%;
 }
 
 li {
     display: inline;
+    
 }
 
 /* Introduction */
@@ -188,7 +196,10 @@ li {
     height: 500px;
     position: relative;
     left: 5%;
-    background: url("../images/ivan-cabanas--E2nk5pNJ1g-unsplash.jpg") no-repeat center center fixed; 
+    background:  linear-gradient(
+      rgba(0, 0, 0, 0.0), 
+      rgba(0, 0, 0, 0.65)
+    ), url("../images/greg-willson-Ayds9E8K41w-unsplash.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -298,7 +309,7 @@ li {
     left: 5%;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 picture {
@@ -356,14 +367,13 @@ picture {
 
 
 .pricing { 
-
-    width: 90%;
-    position: relative;
-    left: 5%;   
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
     height: 500px;
     max-height: 600px;
     overflow: hidden;
+    margin-top: 100px;
 }
 
 .price-photo img {
@@ -478,7 +488,6 @@ footer img {
     display: flex;
     justify-content: center;
     align-content: center;
-    display: block;
     margin: auto;
     padding: 0;
   }
@@ -486,6 +495,9 @@ footer img {
   .modal-content img {
     align-self: center;
     justify-self: center;
+    max-width: 1000px;
+    max-height: 700px;
+    padding: 30px;
   }
 
   
@@ -505,54 +517,6 @@ footer img {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  .mySlide1 {
-    display: none;
-  }
-
-  .mySlide2 {
-    display: none;
-  }
-
-  .mySlide3 {
-    display: none;
-  }
-
-  .mySlide4 {
-    display: none;
-  }
-
-  .mySlide5 {
-    display: none;
-  }
-
-  .mySlide6 {
-    display: none;
-  }
-
-  .mySlide7 {
-    display: none;
-  }
-
-  .mySlide8 {
-    display: none;
-  }
-
-  .mySlide9 {
-    display: none;
-  }
-
-  .mySlide10 {
-    display: none;
-  }
-
-  .mySlide11 {
-    display: none;
-  }
-
-  .mySlide12 {
-    display: none;
   }
   
   .cursor {

@@ -11,6 +11,12 @@ const $modalContent = $(".modal-content");
 
 const $body = $("body");
 
+const $hamburgerDivs = $(".nav-icon div");
+
+const $hamburger = $(".nav-icon");
+
+const $mobileNav = $(".nav-right_mobile");
+
 //Force page back to top on reload
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -23,19 +29,35 @@ $(function() {
         
     
 // Navigation-animation changes
-      $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height()/10);
-      $navtext.toggleClass('left-nav-scrolled', $(this).scrollTop() > $nav.height()/10);
-      $navbtn.toggleClass('nav-btn-scroll', $(this).scrollTop() > $nav.height()/10);
+    $mobileNav.toggleClass('nav-right_mobile--clicked--scrolled', $(this).scrollTop() > $nav.height()/10);
+    $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height()/10);
+    $navtext.toggleClass('left-nav-scrolled', $(this).scrollTop() > $nav.height()/10);
+    $navbtn.toggleClass('nav-btn-scroll', $(this).scrollTop() > $nav.height()/10);
+      
+      
+     
 
       if ($(this).scrollTop() > $nav.height()/10) {
-        $logo.html('<img id="logo" src="images/camera_white.svg">')
+        $logo.html('<img id="logo" src="images/camera_white.svg">');
+        $hamburgerDivs.css('background', 'white');
+        
+        
         
     } else {
         $logo.html(' <img id="logo" src="images/camera-logo-hd-7126.svg">')
+        $hamburgerDivs.css('background', 'black');
+      
     }
 
     });
 });
+
+//Mobile nav when the hamburger is clicked
+$hamburger.click(function() {
+    $mobileNav.toggleClass('nav-right_mobile--clicked');
+    // console.log("clicked");
+});
+
 
 // Scrolling animations - When you click on the arrow, the page scrolls down to the photos
 
@@ -97,7 +119,7 @@ $(function(e) {
         $("#myModal").css('display', 'none'); 
         $modalContent.empty();
         $('body,html').css('overflow','visible');
-        $nav.css('display', 'block')
+        $nav.css('display', 'flex')
 });
 
 });
